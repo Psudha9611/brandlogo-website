@@ -23,7 +23,6 @@
     display: none;
 }
 
-
 .nav-2 a {
     height: 50px;
     font-weight: bolder;
@@ -41,25 +40,19 @@
       }
   }  
 
-.nav-2 i:hover{
-    display: inline;
-}
-
 
 .herosection {
     background-image: url('banner.png');
     background-size: 100% 100%;
     height: 500px;
-    margin: 10px 10px 0px 10px;
+    margin : 10px 10px 0px 10px;
     display: flex;
     align-items: center;
-    flex-direction: row;
 }
 
 .hero-msg {
     max-width: 550px;
     margin-left: 10px;
-    flex-wrap: wrap;
 }
 
 .headline-1 {
@@ -93,9 +86,10 @@
     margin-top: 2rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .shop-section {
       flex-direction: column;
+      flex-shrink: inherit;
     }
     .box {
         flex: 75%;
@@ -161,7 +155,6 @@ ul li{
 .section-img2 {
     background-size: cover;
     flex: 35%;
-    height: 250px;
     margin-top: 50px;
 }
 
@@ -171,9 +164,9 @@ ul li{
     flex-direction: row;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .third-section {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     .section-img {
         flex: 75%;
